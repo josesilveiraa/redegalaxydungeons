@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/spigot.jar" sourcepath="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/spigot.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/plugins/HolographicDisplays.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/plugins/PermissionsEx-1.23.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/plugins/PlayerPoints.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/plugins/Vault.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/Rede Galaxy/Factions Flame/plugins/worldedit-bukkit-6.1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gabriel/Desktop/server/plugins/Citizens.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

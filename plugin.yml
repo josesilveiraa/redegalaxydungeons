@@ -1,0 +1,12 @@
+name: GalaxyDungeons
+version: 1.0
+author: Galaxy
+main: com.gabrielblink.galaxydungeons.Main
+softdepend: [HolographicDisplays]
+commands:
+ dungeon:
+ correio:
+ dungeonparty:
+ pronto:
+ setdungeonnpc:
+ givepasse:

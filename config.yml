@@ -1,0 +1,284 @@
+Licenca: '00000-00000-00000'
+Mysql:
+  Host: localhost
+  Usuario: root
+  Senha: ''
+  Database: redegalaxy
+Loja:
+  PocaoRessureicao: 250
+  GranadaExplosiva: 75
+  GranadaDistracao: 100
+DungeonNPCS:
+  Dungeon: dudethekid
+  Vendedor: Yaomi
+Geral:
+  Server_URL: '&eloja.hyze.net'
+  Lobby_World_Name: lobby_dungeon
+  MinJogadores: 2
+  SpawnLocation: 3.0581541191385746;63.0;9.959845291562;-179.25006;-3.6000035;2d6817b3-ff64-4241-8d99-0d3df5474bfa
+Titulos:
+  FaseIniciada: '&aFase Iniciada'
+  FaseIniciada_SubTitle: '&7Elimine todos os mobs!'
+  FaseFim: '&6Fim da ronda'
+  FaseFim_SubTitle: "&7Iniciando a pr\xf3xima fase..."
+CustomItems:
+  MoedaDeReparacao:
+    ID: 175
+    Data: 0
+    Glow: true
+    Nome: "&6Moeda de Repara\xe7\xe3o"
+    Lore:
+    - '&7Utilize esta moeda em uma bigorna para'
+    - '&7restaurar a durabilidade de um item!'
+  DurezaIII:
+    ID: 403
+    Data: 0
+    Glow: true
+    Nome: '&6Dureza III'
+    Lore:
+    - '&7Possui uma chance de ignorar'
+    - '&7o dano que seria causado'
+    - '&7na sua armadura.'
+    - ''
+    - '&fEncanta: &aTodos os itens.'
+    - '&eUtilize uma bigorna para encantar.'
+    
+#Formato para encodar o Item: - <ItemID>,<ItemData>,[Nome opcional caso não queira deixar null],<quantidade>,<encantamento id>,<encantamento level>...
+
+Dungeons:
+  ONether:
+    PrecoPasse: 350000
+    NomeFancy: O Nether
+    LobbyLocation: -44.52810786397889;76.0;2.530592563782494;90.150215;0.29998332;36fb9c05-268f-402d-97ee-311594667be2
+    ArmaduraInicial:
+      Helmet: 310,0,null,1,0,4,34,4,null,0,null,0
+      Chestplate: 311,0,null,1,0,4,34,4,null,0,null,0
+      Leggings: 312,0,null,1,0,4,34,4,null,0,null,0
+      Boots: 313,0,null,1,0,4,34,4,null,0,null,0
+    ItensIniciais:
+    - 276,0,null,1,16,5,34,3,20,3,null,0
+    - 322,1,null,32,null,0,null,0,null,0,null,0
+    - 261,0,null,1,48,5,34,3,50,1,51,1
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    - 262,0,null,64,null,0,null,0,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    MenuItem:
+      ID: 87
+      Data: 0
+      Glow: true
+      Nome: O Nether
+      Lore:
+      - '&7Entre no nether, elmine os mobs'
+      - '&7ganhe recompensas e utilize suas'
+      - '&7habilidades para vencer!'
+    Fases:
+      Fase_1:
+        BossLocation: ''
+        HorseLocation: -124.1138444289206;74.0;-3.23626847659544;270.7502;-1.8000714;36fb9c05-268f-402d-97ee-311594667be2
+        ChestLocation: -125.0;74.0;7.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2~EAST
+        Location: -44.91940993922076;76.0;2.4722286636963116;90.44985;-0.6000675;36fb9c05-268f-402d-97ee-311594667be2
+        PepitasOnWin: 200
+        Gate:
+        - -128.0;81.0;6.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        - -128.0;74.0;-2.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        Locations:
+        - -83.95925128733717;73.0;3.785572711344769;-92.09979;-1.2000154;36fb9c05-268f-402d-97ee-311594667be2
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+        - DurezaIII,1-50
+      Fase_2:
+        BossLocation: ''
+        HorseLocation: -235.40586559083584;74.0;-2.7352943531102385;271.499;-2.4001746;36fb9c05-268f-402d-97ee-311594667be2
+        ChestLocation: -233.0;74.0;8.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2~EAST
+        Location: -159.0069668191234;74.0;3.7673662492171687;91.64931;-3.4500966;36fb9c05-268f-402d-97ee-311594667be2
+        PepitasOnWin: 200
+        Gate:
+        - -245.0;81.0;6.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        - -245.0;74.0;-2.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        Locations:
+        - -171.18836599479198;73.0625;-3.0825575962228506;316.49872;1.7998018;36fb9c05-268f-402d-97ee-311594667be2
+        - -172.17810971733928;73.5;10.356770970100342;246.59871;-2.8502073;36fb9c05-268f-402d-97ee-311594667be2
+        - -181.8385080948076;73.0;1.6075929040760064;272.39868;2.2497873;36fb9c05-268f-402d-97ee-311594667be2
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+        - DurezaIII,1-50
+      Fase_3:
+        BossLocation: ''
+        HorseLocation: -342.4814879962063;74.0;-3.7313455332956336;270.59888;-0.30016425;36fb9c05-268f-402d-97ee-311594667be2
+        ChestLocation: -343.0;74.0;8.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2~EAST
+        Location: -263.6951354341261;74.0;2.18865066536225;88.79877;-2.2501786;36fb9c05-268f-402d-97ee-311594667be2
+        PepitasOnWin: 200
+        Gate:
+        - -359.0;81.0;6.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        - -359.0;74.0;-2.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2
+        Locations:
+        - -297.0960385306238;73.0;1.5767379194887137;-88.20125;1.6498115;36fb9c05-268f-402d-97ee-311594667be2
+        - -287.2847464797878;74.0;10.286979141180854;-90.45127;-0.4501977;36fb9c05-268f-402d-97ee-311594667be2
+        - -275.3106805872592;74.0;-5.393943542128283;-46.50119;1.9497839;36fb9c05-268f-402d-97ee-311594667be2
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+        - DurezaIII,1-50
+      Fase_4:
+        Boss: WITHER
+        BossLocation: -433.21808792369785;74.0;3.2860839876891172;270.89896;-1.5001732;36fb9c05-268f-402d-97ee-311594667be2
+        ChestLocation: -462.0;74.0;-6.0;0.0;0.0;36fb9c05-268f-402d-97ee-311594667be2~EAST
+        HorseLocation: -460.8499640702366;74.0;9.772799555418773;-87.00133;-0.15015866;36fb9c05-268f-402d-97ee-311594667be2
+        Location: -369.6136427773027;74.0;2.631761771234128;90.74927;-2.4001799;36fb9c05-268f-402d-97ee-311594667be2
+        PepitasOnWin: 200
+        Gate:
+        - ''
+        Locations:
+        - -381.26082397182495;74.0;3.2495979866278804;90.448845;-1.3501782;36fb9c05-268f-402d-97ee-311594667be2
+        - -403.92350516858;73.0;6.7735250368746875;50.54883;12.149818;36fb9c05-268f-402d-97ee-311594667be2
+        - -407.5359978524236;73.5;-5.763051896499675;111.59887;17.549831;36fb9c05-268f-402d-97ee-311594667be2
+        - -433.21808792369785;74.0;3.2860839876891172;270.89896;-1.5001732;36fb9c05-268f-402d-97ee-311594667be2
+        Mobs:
+        - SILVERFISH,20,false
+        - BLAZE,40,false
+        - PIG_ZOMBIE,10,true
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+  OInicio:
+    PrecoPasse: 250000
+    NomeFancy: "O In\xedcio"
+    LobbyLocation: -50.537097549888834;73.0;-133.64298773057607;90.3702;-2.6999714;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+    ArmaduraInicial:
+      Helmet: 310,0,null,1,0,4,34,4,null,0,null,0
+      Chestplate: 311,0,null,1,0,4,34,4,null,0,null,0
+      Leggings: 312,0,null,1,0,4,34,4,null,0,null,0
+      Boots: 313,0,null,1,0,4,34,4,null,0,null,0
+    ItensIniciais:
+    - 276,0,null,1,16,5,34,3,20,3,null,0
+    - 322,1,null,32,null,0,null,0,null,0,null,0
+    - 261,0,null,1,48,5,34,3,50,1,51,1
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8226,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 373,8233,null,1,null,0,null,0,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    - 262,0,null,64,null,0,null,0,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    - 310,0,null,1,0,4,34,4,null,0,null,0
+    - 311,0,null,1,0,4,34,4,null,0,null,0
+    - 312,0,null,1,0,4,34,4,null,0,null,0
+    - 313,0,null,1,0,4,34,4,null,0,null,0
+    MenuItem:
+      ID: 276
+      Data: 0
+      Glow: false
+      Nome: "O In\xedcio"
+      Lore:
+      - "&7Este \xe9 o inicio de uma jornada"
+      - "&7repleta de perigo e a\xe7\xe3o. Boa"
+      - '&7sorte aos que tentarem se'
+      - '&7aventurar por aqui.'
+    Fases:
+      Fase_1:
+        BossLocation: ''
+        HorseLocation: -116.20807703118838;73.0;-140.59697145915;270.96866;-2.8499959;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        ChestLocation: -117.0;73.0;-128.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77~EAST
+        Location: -50.612378758743574;73.0;-133.38187668483994;89.31911;-4.3500323;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        PepitasOnWin: 200
+        Gate:
+        - -123.0;82.0;-130.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -123.0;73.0;-138.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Locations:
+        - -78.41359816755524;76.0;-129.99125509385425;-96.38;1.3500617;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -87.32647726408645;76.0;-124.77106784520973;-110.93003;4.9500422;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+        - DurezaIII,1-50
+      Fase_2:
+        BossLocation: ''
+        HorseLocation: -218.46888047167286;72.0;-138.66580085917997;-87.97982;-1.0499823;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        ChestLocation: -220.0;72.0;-128.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77~EAST
+        Location: -148.10663430975666;72.0;-132.87550050144534;91.270325;-3.2999759;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        PepitasOnWin: 200
+        Gate:
+        - -229.0;81.0;-130.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -229.0;72.0;-138.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Locations:
+        - -177.25239944308424;72.0;-139.79827222591095;293.32028;1.2000098;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -164.2562072952064;72.0625;-129.60389235153738;224.02051;-2.8499796;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -160.6808731973756;72.0;-145.04146950801947;327.82034;7.8000193;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+      Fase_3:
+        BossLocation: ''
+        HorseLocation: -321.3239169764412;72.0;-140.1012793366928;-86.8179;0.7292874;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        ChestLocation: -324.0;72.0;-126.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77~EAST
+        Location: -245.9988479768159;72.0;-133.1162008987466;90.78239;-1.820723;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        PepitasOnWin: 200
+        Gate:
+        - -328.0;81.0;-130.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -328.0;72.0;-138.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Locations:
+        - -283.3739801949825;74.0;-143.0073916892665;-65.217575;0.72925687;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -282.66175952890814;72.0;-129.4692031746077;-118.31758;-1.2207549;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -291.5719923629273;72.0;-136.9035632656603;-89.81749;-1.9707532;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Mobs:
+        - ZOMBIE,10,false
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
+      Fase_4:
+        Boss: WITHER
+        BossLocation: -399.75888613827243;73.0;-131.76981920957672;-89.63049;-1.6500639;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        ChestLocation: -436.0;72.0;-133.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77~EAST
+        HorseLocation: -430.5123619444792;72.0;-124.7025638566303;266.1333;-4.070793;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Location: -357.60773255247756;72.0;-133.7883303301047;89.28275;-3.3207061;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        PepitasOnWin: 200
+        Gate:
+        - -443.0;73.0;-133.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -443.0;73.0;-133.0;0.0;0.0;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Locations:
+        - -384.30749622194264;72.0;-122.22934559128001;244.23242;-0.17074448;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -386.5448473394113;72.0;-142.42314076457131;285.78238;0.42924324;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        - -399.59349944300766;73.0;-132.2064516816448;267.33276;1.7792351;41f7c7b0-b3a2-4f04-bee6-017469a15b77
+        Mobs:
+        - ZOMBIE,20,false
+        - SKELETON,40,false
+        - PIG_ZOMBIE,10,true
+        Drops:
+        - 311,0,null,2,null,0,null,0,null,0,null,0-10
+        - MoedaDeReparacao,10-20
